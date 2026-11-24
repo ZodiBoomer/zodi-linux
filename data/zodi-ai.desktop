@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Zodi AI
+Comment=Assistant conversationnel personnel
+Exec=zodi-ai
+Icon=zodi-ai
+Terminal=false
+Type=Application
+Categories=Utility;Office;
+StartupNotify=true
