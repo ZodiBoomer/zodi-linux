@@ -1,0 +1,25 @@
+[package]
+name = "zodi-ai-linux"
+version = "0.1.0"
+edition = "2021"
+description = "Client Linux natif GTK4/Libadwaita pour Zodi AI"
+license = "MIT"
+
+[dependencies]
+async-channel = "2.3"
+gtk4 = "0.9"
+libadwaita = { version = "0.7", features = ["v1_5"] }
+glib = "0.20"
+reqwest = { version = "0.12", features = ["blocking", "json", "rustls-tls"] }
+serde_json = "1.0"
+
+[package.metadata.deb]
+maintainer = "Zodi AI"
+copyright = "2026, Zodi AI"
+extended-description = "Application de bureau native Zodi AI utilisant GTK4 et Libadwaita."
+depends = "$auto, libgtk-4-1, libadwaita-1-0"
+assets = [
+  ["target/release/zodi-ai-linux", "usr/bin/zodi-ai", "755"],
+  ["data/zodi-ai.desktop", "usr/share/applications/zodi-ai.desktop", "644"],
+  ["data/zodi-ai.svg", "usr/share/icons/hicolor/scalable/apps/zodi-ai.svg", "644"]
+]
