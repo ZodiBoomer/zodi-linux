@@ -16,7 +16,6 @@ serde_json = "1.0"
 [package.metadata.deb]
 maintainer = "Zodi AI"
 copyright = "2026, Zodi AI"
-license-file = ["LICENSE", "0"]
 extended-description = "Application de bureau native Zodi AI utilisant GTK4 et Libadwaita."
 depends = "$auto, libgtk-4-1, libadwaita-1-0"
 assets = [
